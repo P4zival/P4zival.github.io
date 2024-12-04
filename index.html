@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerry Antony Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>this is my portfolio</h1>
+  <header>
+    <div class="container">
+      <div class="intro">
+        <img src="your-picture.jpg" alt="Jerry Antony" class="profile-pic">
+        <div>
+          <h1>Jerry Antony</h1>
+          <p>Game Designer | Developer | Innovator</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">My Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Hello! I’m Jerry Antony, a passionate game designer and developer specializing in creating immersive gaming experiences and hyper-casual games. Explore my portfolio to see how I bring creativity and technical skills together to build engaging games!</p>
+  </section>
+
+  <section id="works" class="container">
+    <h2>My Works</h2>
+    <div class="works-gallery">
+      <div class="work-item">
+        <div class="work-image" style="background-image: url('goal-thumbnail.jpg');"></div>
+        <h3>GOAL!</h3>
+        <p>A two-player board game that transforms football into an engaging tabletop experience.</p>
+        <button onclick="viewDetails('GOAL!')">View Details</button>
+      </div>
+      <div class="work-item">
+        <div class="work-image" style="background-image: url('post-apocalyptic-thumbnail.jpg');"></div>
+        <h3>Post-Apocalyptic Level Design</h3>
+        <p>A detailed Unreal Engine level design depicting a gritty, atmospheric post-apocalyptic world.</p>
+        <button onclick="viewDetails('Post-Apocalyptic Level Design')">View Details</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Jerry Antony </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
